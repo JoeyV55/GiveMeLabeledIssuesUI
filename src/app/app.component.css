@@ -1,0 +1,49 @@
+.searchDropdown {
+    margin-top: 15px;
+}
+
+.projectNameDropdown{
+    display: flex;
+}
+
+.projectNameDropdown select{
+ border-radius: 0%;
+}
+
+.search-button {
+    margin-left: 5px;
+    background-color: #002454;
+    color: white;
+    border-radius: 0%;
+}
+
+.domain-label-text{
+    font-size: medium;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.checkbox-list{
+    margin-left: 20px;
+}
+
+.domainLabelCheckbox{
+    display: inline-table;
+    margin-right: 10px;
+    font-size: initial;
+}
+
+.domainLabelCheckbox label {
+    margin-left: 5px;
+}
+
+.search-label-text{
+    font-size: medium;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.issueCard {
+    margin-top: 10px;
+}
