@@ -12,7 +12,7 @@ import { map } from 'rxjs/operators';
 export class AppComponent {
   title = 'OSS PROJECT';
 
-  projectModel = [ 
+  projectModel = [
     {
       'projectName': 'jabref',
       bertLabel: 'JabRef,jabref',
@@ -324,7 +324,7 @@ export class AppComponent {
   checks = []
 
   issuesData = []
-  
+
   displayLabels = []
 
   constructor(private http: HttpClient) { }
@@ -333,27 +333,28 @@ export class AppComponent {
   }
 
   onSubmit(data: NgForm) {
-
-    this.http.get('https://oss-project-test-db-default-rtdb.firebaseio.com/issues.json')
-    .pipe(map(responseData => {
+    console.log("Sending request to backend.")
+    this.http.get('http://127.0.0.1:8000/BERT/JabRef/UI,DB')
+      .pipe(map(responseData => {
         const issuesArray = [];
 
-        for (const key in responseData){
-            issuesArray.push(responseData[key])
+        for (const key in responseData) {
+          issuesArray.push(responseData[key])
         }
+        console.log("ResponseData: " + responseData);
 
         return issuesArray;
-    }))
-    .subscribe(data => {
+      }))
+      .subscribe(data => {
         this.issuesData = data
-    });
+      });
   }
 
-  onChange(projectName: string){
+  onChange(projectName: string) {
     console.log(projectName)
 
     this.projectModel.forEach((element) => {
-      if(element.projectName === projectName){
+      if (element.projectName === projectName) {
         this.checks = element.checks
       }
     })
