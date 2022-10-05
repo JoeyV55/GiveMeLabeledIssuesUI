@@ -1,50 +1,46 @@
 <app-header></app-header>
 
 <!-- <div class="container"> -->
-  <div style="margin-right: 0px;" class="row">
-    <div style="background-color: yellow; height: 94vh;" class="col-4">
-      <div class="container">
-        <div class="searchDropdown">
-          <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-              <div class="form-group">
-                  <label class="domain-label-text" for="projectName">Select Project Name:</label>
-                  <br />
-                  <div class="projectNameDropdown">
-                      <select class="form-control" ngModel name="projectName" (change)="onChange($event.target.value)">
-                          <option *ngFor="let project of projectModel" [value]="project.projectName">{{project.projectName}}</option>
-                      </select>
-                      <input [disabled]="!f.dirty" class="btn search-button" type="submit" value="Search">
-                  </div>
-                  <div class="domain-label-text">Domain Labels:</div>
-                  <br />
-                  <div class="domainLabelCheckbox" *ngFor="let check of checks">
-                      <input
-                        type="checkbox"
-                        [id]="check.id"
-                        [name]="check.label"
-                        [(ngModel)]="check.selected"
-                      />
-                      <label [for]="check.id">{{ check.label }}</label>
-                  </div>
-              </div>
-          </form>
-      </div>
+<div style="margin-right: 0px;" class="row">
+  <div style="background-color: yellow; height: 94vh;" class="col-4">
+    <div class="container">
+      <div class="searchDropdown">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+          <div class="form-group">
+            <label class="domain-label-text" for="projectName">Select Project Name:</label>
+            <br />
+            <div class="projectNameDropdown">
+              <select class="form-control" ngModel name="projectName" (change)="onChange($event.target.value)">
+                <option *ngFor="let project of projectModel" [value]="project.projectName">{{project.projectName}}
+                </option>
+              </select>
+              <input [disabled]="!f.dirty" class="btn search-button" type="submit" value="Search">
+            </div>
+            <div class="domain-label-text">Domain Labels:</div>
+            <br />
+            <div class="domainLabelCheckbox" *ngFor="let check of checks">
+              <input type="checkbox" [id]="check.id" [name]="check.label" [(ngModel)]="check.selected" />
+              <label [for]="check.id">{{ check.label }}</label>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-    <div class="col-8">
-      <div class="container">
-        <div class="search-label-text">Search Results:</div>
+  </div>
+  <div class="col-8">
+    <div class="container">
+      <div class="search-label-text">Search Results:</div>
 
-        <div class="card issueCard" *ngFor="let data of issuesData[0]">
-            <div class="card-body" >
-              <p>{{ data.issueTitle }}</p>
-              <p>{{ data.issueDescription }}</p>
-              <p>{{ data.issueBody }}</p>
-              <p>{{ data.issueLabels }}</p>
-              <p>{{ data.issueLink }}</p>
-            </div>
+      <div class="card issueCard" *ngFor="let data of issuesData[0]">
+        <div class="card-body">
+          <p>{{ data.title }}</p>
+          <p>{{ data.description }}</p>
+          <p>{{ data.body }}</p>
+          <p>{{ data.labels }}</p>
+          <p>{{ data.link }}</p>
         </div>
       </div>
     </div>
   </div>
+</div>
 <!-- </div> -->

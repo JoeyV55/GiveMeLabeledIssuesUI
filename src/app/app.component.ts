@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 })
 
 export class AppComponent {
-  title = 'OSS PROJECT';
+  title = 'GiveMeLabeledIssues';
 
   projectModel = [
     {
@@ -341,7 +341,9 @@ export class AppComponent {
         for (const key in responseData) {
           issuesArray.push(responseData[key])
         }
-        console.log("ResponseData: " + responseData);
+        console.log("ResponseData: " + responseData['issues']);
+        //console.log(issuesArray);
+        //Build issueData objects. 
 
         return issuesArray;
       }))
