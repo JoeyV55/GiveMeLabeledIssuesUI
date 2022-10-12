@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { map } from 'rxjs/operators';
+import { IssueData } from './issuedata/issuedata';
 
 @Component({
   selector: 'app-root',
@@ -337,13 +338,17 @@ export class AppComponent {
     this.http.get('http://127.0.0.1:8000/BERT/JabRef/UI,DB')
       .pipe(map(responseData => {
         const issuesArray = [];
-
-        for (const key in responseData) {
-          issuesArray.push(responseData[key])
+        console.log(responseData["issues"]);
+        for (var issue of responseData["issues"]) {
+          //issuesArray.push(responseData[key])
+          //Build issueData objects. 
+          console.log(issue["issueNumber"])
+          let currIssue = new IssueData(issue["issueNumber"], issue["labels"]);
+          issuesArray.push(currIssue);
         }
         console.log("ResponseData: " + responseData['issues']);
-        //console.log(issuesArray);
-        //Build issueData objects. 
+        console.log(issuesArray);
+
 
         return issuesArray;
       }))
