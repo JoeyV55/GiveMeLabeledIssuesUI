@@ -2,12 +2,12 @@
     margin-top: 15px;
 }
 
-.projectNameDropdown{
+.projectNameDropdown {
     display: flex;
 }
 
-.projectNameDropdown select{
- border-radius: 0%;
+.projectNameDropdown select {
+    border-radius: 0%;
 }
 
 .search-button {
@@ -17,17 +17,17 @@
     border-radius: 0%;
 }
 
-.domain-label-text{
+.domain-label-text {
     font-size: medium;
     font-weight: 500;
     margin-top: 10px;
 }
 
-.checkbox-list{
+.checkbox-list {
     margin-left: 20px;
 }
 
-.domainLabelCheckbox{
+.domainLabelCheckbox {
     display: inline-table;
     margin-right: 10px;
     font-size: initial;
@@ -37,8 +37,8 @@
     margin-left: 5px;
 }
 
-.search-label-text{
-    font-size: medium;
+.search-label-text {
+    font-size: x-large;
     font-weight: 500;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -46,4 +46,23 @@
 
 .issueCard {
     margin-top: 10px;
+}
+
+.issueTitle {
+    font-size: large;
+    font-weight: bold;
+}
+
+.issueData {
+    margin-left: 20px;
+}
+
+.issueCardText {
+    font-size: medium;
+    font-weight: 250;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
 }

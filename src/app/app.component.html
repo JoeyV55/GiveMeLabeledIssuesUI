@@ -33,12 +33,14 @@
 
       <div class="card issueCard" *ngFor="let data of issuesData">
         <div class="card-body">
-          <p>{{ data.title }}</p>
-          <p>{{ data.number }}</p>
-          <p>{{ data.description }}</p>
-          <p>{{ data.body }}</p>
-          <p>{{ data.labels }}</p>
-          <p>{{ data.link }}</p>
+          <p><span class="issueTitle">{{ data.title }}</span> <a [attr.href]="data.link" target="_blank"> #{{
+              data.number }}</a></p>
+          <p></p>
+          <div class="issueData">
+            <p class="issueCardText"><u>Relevant skills:</u> {{ data.labels }}</p>
+            <p class="issueCardText"><u>Link to the open issue:</u> <a [attr.href]="data.link" target="_blank">
+                {{data.link}}</a></p>
+          </div>
         </div>
       </div>
     </div>
