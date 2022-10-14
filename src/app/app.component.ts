@@ -12,6 +12,7 @@ import { IssueData } from './issuedata/issuedata';
 
 export class AppComponent {
   title = 'GiveMeLabeledIssues';
+  baseurl = 'http://127.0.0.1:8000/BERT/'
 
   projectModel = [
     {
@@ -328,19 +329,36 @@ export class AppComponent {
 
   displayLabels = []
 
+  projectName = ""
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }
 
   onSubmit(data: NgForm) {
-    console.log("Sending request to backend.")
-    this.http.get('http://127.0.0.1:8000/BERT/JabRef/UI,DB')
+    let endpointUrl = this.baseurl;
+    endpointUrl += this.projectName + "/"
+    let selectedChecks = []
+    this.checks.forEach(check => {
+      if (check.selected)
+        selectedChecks.push(check.bertDomainLabel)
+    });
+
+    let index = 0;
+    selectedChecks.forEach(label => {
+      endpointUrl += label
+      if (index != selectedChecks.length - 1)
+        endpointUrl += ","
+      index++;
+    })
+    console.log("Sending request to backend. Url: " + endpointUrl);
+
+    this.http.get(endpointUrl)
       .pipe(map(responseData => {
         const issuesArray = [];
         console.log(responseData["issues"]);
         for (var issue of responseData["issues"]) {
-          //issuesArray.push(responseData[key])
           //Build issueData objects. 
           console.log(issue["issueNumber"])
           let link = "https://github.com/JabRef/jabref/issues/" + issue["issueNumber"];
@@ -359,7 +377,7 @@ export class AppComponent {
   }
 
   onChange(projectName: string) {
-    console.log(projectName)
+    this.projectName = projectName;
 
     this.projectModel.forEach((element) => {
       if (element.projectName === projectName) {
