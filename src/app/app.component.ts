@@ -12,12 +12,12 @@ import { IssueData } from './issuedata/issuedata';
 
 export class AppComponent {
   title = 'GiveMeLabeledIssues';
-  baseurl = 'http://127.0.0.1:8000/BERT/'
+  baseurl = 'http://127.0.0.1:8000/Mine/'
 
   projectModel = [
     {
       'projectName': 'jabref',
-      bertLabel: 'JabRef,jabref',
+      projectLabel: 'JabRef,jabref',
       checks: [
         {
           id: 'utility',
@@ -137,7 +137,7 @@ export class AppComponent {
     },
     {
       'projectName': 'powertoys',
-      bertLabel: 'microsoft,PowerToys',
+      projectLabel: 'microsoft,PowerToys',
       'checks': [
         {
           id: 'application-performance-manager',
@@ -221,7 +221,7 @@ export class AppComponent {
     },
     {
       'projectName': 'rmca',
-      bertLabel: 'nobodyczcz,MCA-RMCA',
+      projectLabel: 'nobodyczcz,MCA-RMCA',
       'checks': [
         {
           id: 'application-performance-manager',
@@ -329,7 +329,7 @@ export class AppComponent {
 
   displayLabels = []
 
-  projectName = ""
+  projectLabel = ""
 
   constructor(private http: HttpClient) { }
 
@@ -338,7 +338,7 @@ export class AppComponent {
 
   onSubmit(data: NgForm) {
     let endpointUrl = this.baseurl;
-    endpointUrl += this.projectName + "/"
+    endpointUrl += this.projectLabel + "/"
     let selectedChecks = []
     this.checks.forEach(check => {
       if (check.selected)
@@ -377,11 +377,10 @@ export class AppComponent {
   }
 
   onChange(projectName: string) {
-    this.projectName = projectName;
-
     this.projectModel.forEach((element) => {
       if (element.projectName === projectName) {
         this.checks = element.checks
+        this.projectLabel = element.projectLabel
       }
     })
   }
