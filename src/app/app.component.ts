@@ -87,9 +87,9 @@ export class AppComponent {
         },
         {
           id: 'microservices',
-          label: 'Microservices/Services',
+          label: 'Microservices',
           selected: false,
-          bertDomainLabel: 'util'
+          bertDomainLabel: 'Microservices'
         },
         {
           id: 'test',
@@ -183,7 +183,7 @@ export class AppComponent {
         },
         {
           id: 'microservices',
-          label: 'Microservices/Services',
+          label: 'Microservices',
           selected: false,
           bertDomainLabel: 'Microservices'
         },
@@ -219,108 +219,108 @@ export class AppComponent {
         }
       ]
     },
-    {
-      'projectName': 'rmca',
-      projectLabel: 'nobodyczcz,MCA-RMCA',
-      'checks': [
-        {
-          id: 'application-performance-manager',
-          label: 'Application performance Manager (APM)',
-          selected: false,
-          bertDomainLabel: 'APM'
-        },
-        {
-          id: 'network',
-          label: 'Network',
-          selected: false,
-          bertDomainLabel: 'Network'
-        },
-        {
-          id: 'databases',
-          label: 'Databases (DB)',
-          selected: false,
-          bertDomainLabel: 'DB'
-        },
-        {
-          id: 'error-handling',
-          label: 'Error Handling',
-          selected: false,
-          bertDomainLabel: 'Error.Handling'
-        },
-        {
-          id: 'logging',
-          label: 'Logging',
-          selected: false,
-          bertDomainLabel: 'Logging'
-        },
-        {
-          id: 'language',
-          label: 'Language (Lang)',
-          selected: false,
-          bertDomainLabel: 'Lang'
-        },
-        {
-          id: 'data-structure',
-          label: 'Data Structure',
-          selected: false,
-          bertDomainLabel: 'Data.Structure'
-        },
-        {
-          id: 'software-dev-and-it-operations',
-          label: 'Software Development and IT Operations (DevOps)',
-          selected: false,
-          bertDomainLabel: 'DevOps'
-        },
-        {
-          id: 'internationalization',
-          label: 'Internationalization (il8n)',
-          selected: false,
-          bertDomainLabel: 'il8n'
-        },
-        {
-          id: 'setup',
-          label: 'Setup',
-          selected: false,
-          bertDomainLabel: 'Setup'
-        },
-        {
-          id: 'microservices',
-          label: 'Microservices/Services',
-          selected: false,
-          bertDomainLabel: 'Microservices'
-        },
-        {
-          id: 'user-interface',
-          label: 'User Interface (UI)',
-          selected: false,
-          bertDomainLabel: 'UI'
-        },
-        {
-          id: 'parser',
-          label: 'Parser',
-          selected: false,
-          bertDomainLabel: 'Parser'
-        },
-        {
-          id: 'security',
-          label: 'Security',
-          selected: false,
-          bertDomainLabel: 'Security'
-        },
-        {
-          id: 'big-data',
-          label: 'Big Data',
-          selected: false,
-          bertDomainLabel: 'Big.Data'
-        },
-        {
-          id: 'event-handling',
-          label: 'Event Handling',
-          selected: false,
-          bertDomainLabel: 'Event.Handling'
-        }
-      ]
-    }
+    // {
+    //   'projectName': 'audacity',
+    //   projectLabel: 'nobodyczcz,MCA-RMCA',
+    //   'checks': [
+    //     {
+    //       id: 'application-performance-manager',
+    //       label: 'Application performance Manager (APM)',
+    //       selected: false,
+    //       bertDomainLabel: 'APM'
+    //     },
+    //     {
+    //       id: 'network',
+    //       label: 'Network',
+    //       selected: false,
+    //       bertDomainLabel: 'Network'
+    //     },
+    //     {
+    //       id: 'databases',
+    //       label: 'Databases (DB)',
+    //       selected: false,
+    //       bertDomainLabel: 'DB'
+    //     },
+    //     {
+    //       id: 'error-handling',
+    //       label: 'Error Handling',
+    //       selected: false,
+    //       bertDomainLabel: 'Error.Handling'
+    //     },
+    //     {
+    //       id: 'logging',
+    //       label: 'Logging',
+    //       selected: false,
+    //       bertDomainLabel: 'Logging'
+    //     },
+    //     {
+    //       id: 'language',
+    //       label: 'Language (Lang)',
+    //       selected: false,
+    //       bertDomainLabel: 'Lang'
+    //     },
+    //     {
+    //       id: 'data-structure',
+    //       label: 'Data Structure',
+    //       selected: false,
+    //       bertDomainLabel: 'Data.Structure'
+    //     },
+    //     {
+    //       id: 'software-dev-and-it-operations',
+    //       label: 'Software Development and IT Operations (DevOps)',
+    //       selected: false,
+    //       bertDomainLabel: 'DevOps'
+    //     },
+    //     {
+    //       id: 'internationalization',
+    //       label: 'Internationalization (il8n)',
+    //       selected: false,
+    //       bertDomainLabel: 'il8n'
+    //     },
+    //     {
+    //       id: 'setup',
+    //       label: 'Setup',
+    //       selected: false,
+    //       bertDomainLabel: 'Setup'
+    //     },
+    //     {
+    //       id: 'microservices',
+    //       label: 'Microservices/Services',
+    //       selected: false,
+    //       bertDomainLabel: 'Microservices'
+    //     },
+    //     {
+    //       id: 'user-interface',
+    //       label: 'User Interface (UI)',
+    //       selected: false,
+    //       bertDomainLabel: 'UI'
+    //     },
+    //     {
+    //       id: 'parser',
+    //       label: 'Parser',
+    //       selected: false,
+    //       bertDomainLabel: 'Parser'
+    //     },
+    //     {
+    //       id: 'security',
+    //       label: 'Security',
+    //       selected: false,
+    //       bertDomainLabel: 'Security'
+    //     },
+    //     {
+    //       id: 'big-data',
+    //       label: 'Big Data',
+    //       selected: false,
+    //       bertDomainLabel: 'Big.Data'
+    //     },
+    //     {
+    //       id: 'event-handling',
+    //       label: 'Event Handling',
+    //       selected: false,
+    //       bertDomainLabel: 'Event.Handling'
+    //     }
+    //  ]
+    // }
   ];
 
   checks = []
@@ -361,7 +361,7 @@ export class AppComponent {
         for (var issue of responseData["issues"]) {
           //Build issueData objects. 
           console.log(issue["issueNumber"])
-          let link = "https://github.com/JabRef/jabref/issues/" + issue["issueNumber"];
+          let link = "https://github.com/" + this.projectLabel.replace(",", "/") + "/issues/" + issue["issueNumber"];
           let currIssue = new IssueData(issue["title"], issue["issueNumber"], issue["labels"], link);
           issuesArray.push(currIssue);
         }
