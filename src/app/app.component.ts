@@ -41,7 +41,7 @@ export class AppComponent {
           id: 'network',
           label: 'Network',
           selected: false,
-          bertDomainLabel: 'network'
+          bertDomainLabel: 'Network'
         },
         {
           id: 'databases',
