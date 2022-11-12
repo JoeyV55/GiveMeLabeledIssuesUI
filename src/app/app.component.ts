@@ -362,7 +362,7 @@ export class AppComponent {
           //Build issueData objects. 
           console.log(issue["issueNumber"])
           let link = "https://github.com/" + this.projectLabel.replace(",", "/") + "/issues/" + issue["issueNumber"];
-          let currIssue = new IssueData(issue["title"], issue["issueNumber"], issue["labels"], link);
+          let currIssue = new IssueData(issue["issueTitle"], issue["issueNumber"], issue["issueLabels"], link);
           issuesArray.push(currIssue);
         }
         console.log("ResponseData: " + responseData['issues']);

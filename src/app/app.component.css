@@ -54,13 +54,17 @@
 }
 
 .issueData {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .issueCardText {
     font-size: medium;
     font-weight: 250;
     margin-top: 10px;
+}
+
+.container {
+    margin: 0%;
 }
 
 a {
