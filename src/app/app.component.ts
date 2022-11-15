@@ -219,108 +219,126 @@ export class AppComponent {
         }
       ]
     },
-    // {
-    //   'projectName': 'audacity',
-    //   projectLabel: 'nobodyczcz,MCA-RMCA',
-    //   'checks': [
-    //     {
-    //       id: 'application-performance-manager',
-    //       label: 'Application performance Manager (APM)',
-    //       selected: false,
-    //       bertDomainLabel: 'APM'
-    //     },
-    //     {
-    //       id: 'network',
-    //       label: 'Network',
-    //       selected: false,
-    //       bertDomainLabel: 'Network'
-    //     },
-    //     {
-    //       id: 'databases',
-    //       label: 'Databases (DB)',
-    //       selected: false,
-    //       bertDomainLabel: 'DB'
-    //     },
-    //     {
-    //       id: 'error-handling',
-    //       label: 'Error Handling',
-    //       selected: false,
-    //       bertDomainLabel: 'Error.Handling'
-    //     },
-    //     {
-    //       id: 'logging',
-    //       label: 'Logging',
-    //       selected: false,
-    //       bertDomainLabel: 'Logging'
-    //     },
-    //     {
-    //       id: 'language',
-    //       label: 'Language (Lang)',
-    //       selected: false,
-    //       bertDomainLabel: 'Lang'
-    //     },
-    //     {
-    //       id: 'data-structure',
-    //       label: 'Data Structure',
-    //       selected: false,
-    //       bertDomainLabel: 'Data.Structure'
-    //     },
-    //     {
-    //       id: 'software-dev-and-it-operations',
-    //       label: 'Software Development and IT Operations (DevOps)',
-    //       selected: false,
-    //       bertDomainLabel: 'DevOps'
-    //     },
-    //     {
-    //       id: 'internationalization',
-    //       label: 'Internationalization (il8n)',
-    //       selected: false,
-    //       bertDomainLabel: 'il8n'
-    //     },
-    //     {
-    //       id: 'setup',
-    //       label: 'Setup',
-    //       selected: false,
-    //       bertDomainLabel: 'Setup'
-    //     },
-    //     {
-    //       id: 'microservices',
-    //       label: 'Microservices/Services',
-    //       selected: false,
-    //       bertDomainLabel: 'Microservices'
-    //     },
-    //     {
-    //       id: 'user-interface',
-    //       label: 'User Interface (UI)',
-    //       selected: false,
-    //       bertDomainLabel: 'UI'
-    //     },
-    //     {
-    //       id: 'parser',
-    //       label: 'Parser',
-    //       selected: false,
-    //       bertDomainLabel: 'Parser'
-    //     },
-    //     {
-    //       id: 'security',
-    //       label: 'Security',
-    //       selected: false,
-    //       bertDomainLabel: 'Security'
-    //     },
-    //     {
-    //       id: 'big-data',
-    //       label: 'Big Data',
-    //       selected: false,
-    //       bertDomainLabel: 'Big.Data'
-    //     },
-    //     {
-    //       id: 'event-handling',
-    //       label: 'Event Handling',
-    //       selected: false,
-    //       bertDomainLabel: 'Event.Handling'
-    //     }
-    //  ]
-    // }
+    {
+      'projectName': 'audacity',
+      projectLabel: 'audacity,audacity',
+      'checks': [
+        {
+          id: 'utility',
+          label: 'Utility (Util)',
+          selected: false,
+          bertDomainLabel: 'Util'
+        },
+        {
+          id: 'application-performance-manager',
+          label: 'Application performance Manager (APM)',
+          selected: false,
+          bertDomainLabel: 'APM'
+        },
+        {
+          id: 'network',
+          label: 'Network',
+          selected: false,
+          bertDomainLabel: 'Network'
+        },
+        {
+          id: 'databases',
+          label: 'Databases (DB)',
+          selected: false,
+          bertDomainLabel: 'DB'
+        },
+        {
+          id: 'error-handling',
+          label: 'Error Handling',
+          selected: false,
+          bertDomainLabel: 'Error.Handling'
+        },
+        {
+          id: 'logging',
+          label: 'Logging',
+          selected: false,
+          bertDomainLabel: 'Logging'
+        },
+        {
+          id: 'language',
+          label: 'Language (Lang)',
+          selected: false,
+          bertDomainLabel: 'Lang'
+        },
+        {
+          id: 'data-structure',
+          label: 'Data Structure',
+          selected: false,
+          bertDomainLabel: 'Data.Structure'
+        },
+        {
+          id: 'internationalization',
+          label: 'Internationalization (il8n)',
+          selected: false,
+          bertDomainLabel: 'il8n'
+        },
+        {
+          id: 'setup',
+          label: 'Setup',
+          selected: false,
+          bertDomainLabel: 'Setup'
+        },
+        {
+          id: 'logic',
+          label: 'Logic',
+          selected: false,
+          bertDomainLabel: 'Logic'
+        },
+        {
+          id: 'input-output',
+          label: 'Input-Output (IO)',
+          selected: false,
+          bertDomainLabel: 'IO'
+        },
+        {
+          id: 'user-interface',
+          label: 'User Interface (UI)',
+          selected: false,
+          bertDomainLabel: 'UI'
+        },
+        {
+          id: 'parser',
+          label: 'Parser',
+          selected: false,
+          bertDomainLabel: 'Parser'
+        },
+        {
+          id: 'event-handling',
+          label: 'Event Handling',
+          selected: false,
+          bertDomainLabel: 'Event.Handling'
+        },
+        {
+          id: 'application',
+          label: 'Application (App)',
+          selected: false,
+          bertDomainLabel: 'App'
+        },
+        {
+          id: 'geo-info-sys',
+          label: 'Geographic Information Systems (GIS)',
+          selected: false,
+          bertDomainLabel: 'GIS'
+        },
+        {
+          id: 'multimedia',
+          label: 'Multimedia',
+          selected: false,
+          bertDomainLabel: 'Multimedia'
+        },
+        {
+          id: 'computer-graphics',
+          label: 'Computer Graphics (CG)',
+          selected: false,
+          bertDomainLabel: 'CG'
+        },
+      ]
+    }
   ];
 
   checks = []
