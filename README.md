@@ -1,6 +1,8 @@
 # GiveMeLabeledIssuesUI
 This is the user-facing web interface to discover new open source issues within supported projects. The web interface communicates with the backend of the system, [a Django REST API](https://github.com/JoeyV55/GiveMeLabeledIssuesAPI) that provides access to both the BERT and TF-IDF (coming soon!) text classification models. 
 
+[![DOI](https://zenodo.org/badge/545266562.svg)](https://zenodo.org/badge/latestdoi/545266562)
+
 
 # How to install
 
